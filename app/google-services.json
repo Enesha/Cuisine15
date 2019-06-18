@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "820648938907",
+    "firebase_url": "https://cuisine-8a27d.firebaseio.com",
+    "project_id": "cuisine-8a27d",
+    "storage_bucket": "cuisine-8a27d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:820648938907:android:97b62336ce1bfa14",
+        "android_client_info": {
+          "package_name": "com.example.enesha.cuisine"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "820648938907-0otbkp5f4f9831uein661ki8oq8l7f9h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.enesha.cuisine",
+            "certificate_hash": "58bdd2e79388f81cb4118704e1723fe3b9202eb1"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAP-YpTcwioOcRKPXMHcbDC4syIixipM1U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

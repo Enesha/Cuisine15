@@ -92,7 +92,7 @@ public class Upload extends AppCompatActivity {
             dialog.show();
 
             // get the storage reference
-            StorageReference ref = mStorageRef.child(FB_STORAGE_PATH + System.currentTimeMillis() + getImageExt(imgUri));
+            StorageReference ref = mStorageRef.child(FB_STORAGE_PATH + System.currentTimeMillis()+"." + getImageExt(imgUri));
 
             //add the file to the reference
             ref.putFile(imgUri).addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
@@ -109,8 +109,6 @@ public class Upload extends AppCompatActivity {
                     //Save image info in to firebase database
                     String uploadId = mDatabaseRef.push().getKey();
                     mDatabaseRef.child(uploadId).setValue(imageUpload);
-
-
                 }
             })
              .addOnFailureListener(new OnFailureListener() {
@@ -122,8 +120,6 @@ public class Upload extends AppCompatActivity {
 
                      //display success toast msg
                      Toast.makeText(getApplicationContext(), e.getMessage(), Toast.LENGTH_SHORT).show();
-
-
                  }
              })
                 .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
@@ -131,10 +127,8 @@ public class Upload extends AppCompatActivity {
                     public void onProgress(UploadTask.TaskSnapshot taskSnapshot) {
 
                         //show upload progress
-                        double progress = (100*taskSnapshot.getBytesTransferred())/taskSnapshot.getBytesTransferred();
+                        double progress = (100*taskSnapshot.getBytesTransferred())/taskSnapshot.getTotalByteCount();
                         dialog.setMessage("Uploaded" + (int)progress+"%");
-
-
                     }
                 });
         }

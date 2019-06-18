@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Home"
+    tools:ignore="MissingDefaultResource">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <Button
+        android:id="@+id/Register"
+        android:layout_width="256dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="monospace"
+        android:text="Register"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Recipes" />
+
+    <Button
+        android:id="@+id/Log"
+        android:layout_width="252dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="monospace"
+        android:text="Log In"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Register" />
+
+    <Button
+        android:id="@+id/Recipes"
+        android:layout_width="259dp"
+        android:layout_height="58dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/button_state"
+        android:fontFamily="monospace"
+        android:text="Recipes"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>
